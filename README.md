@@ -18,9 +18,8 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
  <img src="https://github.com/GabiiKatherin/LeetCodeSQL/assets/71796509/0c40b70d-8450-4d61-bd09-ce871293b92e" width="70%" alt="Descrição da imagem"><br><br>
  </div>  
 
-## EASY Exercises about SELECT:
+# SELECT Exercises
 
-### 1 - Recyclable and Low Fat Products:
-Write a solution to find the ids of products that are both low fat and recyclable.
+01. <b>Recyclable and Low Fat Products:</b> Write a solution to find the ids of products that are both low fat and recyclable.
 
 > SELECT product_id FROM Products p WHERE low_fats = 'Y' AND recyclable = 'Y'
