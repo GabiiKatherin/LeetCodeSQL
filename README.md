@@ -21,10 +21,10 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 # SELECT Exercises
 
  1. <b>Recyclable and Low Fat Products:</b> Write a solution to find the ids of products that are both low fat and recyclable.
-> SELECT product_id
-> FROM Products p
-> WHERE low_fats = 'Y'
-> AND recyclable = 'Y'
+> SELECT product_id<br>
+> FROM Products p<br>
+> WHERE low_fats = 'Y'<br>
+> AND recyclable = 'Y'<br>
 
  2. <b>Find Customer Referee</b>: Find the names of the customer that are not referred by the customer with id = 2.
 >SELECT c.name
