@@ -66,9 +66,9 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 >GROUP BY customer_id<br>
 
 9.  <b>Rising Temperature</b>: Write a solution to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
->SELECT w2.id
->FROM Weather w JOIN Weather w2 ON w.recordDate = DATEADD(day, -1, w2.recordDate)
->WHERE w2.temperature > w.temperature
+>SELECT w2.id<br>
+>FROM Weather w JOIN Weather w2 ON w.recordDate = DATEADD(day, -1, w2.recordDate)<br>
+>WHERE w2.temperature > w.temperature<br>
 
 10.  <b></b>:
 11.  <b></b>:
