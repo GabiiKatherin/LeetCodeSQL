@@ -65,9 +65,13 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 >WHERE transaction_id IS NULL<br>
 >GROUP BY customer_id<br>
 
-9.  <b></b>:
-10. <b></b>:
-11. <b></b>:
+9.  <b>Rising Temperature</b>: Write a solution to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
+>SELECT w2.id
+>FROM Weather w JOIN Weather w2 ON w.recordDate = DATEADD(day, -1, w2.recordDate)
+>WHERE w2.temperature > w.temperature
+
+10.  <b></b>:
+11.  <b></b>:
 12. <b></b>:
 13. <b></b>:
 14. <b></b>:
