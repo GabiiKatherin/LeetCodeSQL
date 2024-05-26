@@ -72,13 +72,13 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 >WHERE w2.temperature > w.temperature<br>
 
 10.  <b>Average Time of Process per Machine</b>: The average time is calculated by the total time to complete every process on the machine divided by the number of processes that were run. The resulting table should have the machine_id along with the average time as processing_time, which should be rounded to 3 decimal places.
->SELECT a.machine_id, ROUND(AVG(a2.timestamp - a.timestamp),3) AS processing_time<br>
->FROM Activity a<br>
->JOIN Activity a2 ON a.machine_id = a2.machine_id<br>
->                 AND a.process_id = a2.process_id<br>
->                 AND a.timestamp < a2.timestamp<br>
->GROUP BY a.machine_id<br>
-
+```sql
+SELECT a.machine_id, ROUND(AVG(a2.timestamp - a.timestamp), 3) AS processing_time
+FROM Activity a
+JOIN Activity a2 ON a.machine_id = a2.machine_id
+                 AND a.process_id = a2.process_id
+                 AND a.timestamp < a2.timestamp
+GROUP BY a.machine_id;
 
 
 
