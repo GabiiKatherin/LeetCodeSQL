@@ -15,7 +15,7 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 
 
 <div align="center">
- <img src="https://github.com/GabiiKatherin/LeetCodeSQL/assets/71796509/0c40b70d-8450-4d61-bd09-ce871293b92e" width="70%" alt="Descrição da imagem"><br><br>
+ <img src="https://github.com/GabiiKatherin/LeetCodeSQL/assets/71796509/ba717982-2c74-423d-9ea1-82d74138c466" width="70%" alt="Descrição da imagem"><br><br>
  </div>  
 
 # Solved exercises Easy/Medium/Hard:
