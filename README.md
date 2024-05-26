@@ -29,64 +29,64 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 ```
 
  2. <b>Find Customer Referee</b>: Find the names of the customer that are not referred by the customer with id = 2.
-```sql
+>```sql
 >SELECT c.name
 >FROM Customer c
 >WHERE referee_id != 2 OR referee_id IS NULL
-```
+>```
 
 3. <b>Big Countries</b>: Write a solution to find the name, population, and area of the big countries.
-```sql
+>```sql
 >SELECT w.name, w.population, w.area
 >FROM World w
 >WHERE w.area >= 3000000 OR population >= 25000000
-```
+>```
 
 4. <b>Article Views I</b>: Write a solution to find all the authors that viewed at least one of their own articles.
-```sql
+>```sql
 >SELECT DISTINCT author_id AS id
 >FROM Views v
 >WHERE author_id = viewer_id
 >ORDER BY author_id ASC
-```
+>```
 
 5. <b>Invalid Tweets</b>: Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
-```sql
+>```sql
 >SELECT tweet_id 
 >FROM Tweets t
 >WHERE LEN(content) > 15
-```
+>```
 
 6. <b>Replace Employee ID With The Unique Identifier</b>: Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
-```sql
+>```sql
 >SELECT empUni.unique_id, emp.name
 >FROM Employees emp
 >LEFT JOIN EmployeeUNI empUni ON emp.id = empUni.id
-```
+>```
 
 7. <b>Product Sales Analysis I</b>: Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
-```sql
+>```sql
 >SELECT p.product_name, s.year, s.price
 >FROM Sales s
 >INNER JOIN Product p ON p.product_id = s.product_id
-```
+>```
 
 8. <b>Customer Who Visited but Did Not Make Any Transactions</b>: Write a solution to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits.
-```sql
+>```sql
 >SELECT customer_id, COUNT(v.visit_id) AS count_no_trans
 >FROM Visits v
 >LEFT JOIN Transactions t on t.visit_id = v.visit_id
 >WHERE transaction_id IS NULL
 >GROUP BY customer_id
-```
+>```
 
 9. <b>Rising Temperature</b>: Write a solution to find all dates' Id with higher temperatures compared to its previous dates (yesterday).
-```sql
+>```sql
 >SELECT w2.id
 >FROM Weather w 
 >JOIN Weather w2 ON w.recordDate = DATEADD(day, -1, w2.recordDate)
 >WHERE w2.temperature > w.temperature
-```
+>```
 
 10. <b>Average Time of Process per Machine</b>: The average time is calculated by the total time to complete every process on the machine divided by the number of processes that were run. The resulting table should have the machine_id along with the average time as processing_time, which should be rounded to 3 decimal places.
 > ```sql
@@ -97,7 +97,6 @@ In this project, I will solve the SQL Study Plan with 50 questions from easy to 
 >                  AND a.timestamp < a2.timestamp
 > GROUP BY a.machine_id;
 > ```
-
 
 
 11.  <b></b>:
